@@ -1,16 +1,18 @@
 {
-  "name": "no-as-service",
-  "version": "1.0.0",
-  "description": "A lightweight API that returns random rejection or no reasons.",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "vite --port 3000",
+    "fix": "prettier --write .",
+    "check": "prettier --check .",
+    "build": "vite build"
   },
-  "author": "hotheadhacker",
-  "license": "MIT",
+  "devDependencies": {
+    "@webxdc/vite-plugins": "latest",
+    "prettier": "latest",
+    "vite": "latest"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "express-rate-limit": "^7.0.0"
+    "@fontsource/cherry-bomb-one": "^5.2.7"
   }
 }
